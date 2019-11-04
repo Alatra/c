@@ -1,0 +1,7 @@
+remove Lock = Caps_Lock
+keycode 49 = asciitilde asciicircum
+keycode 9 = Caps_Lock NoSymbol Caps_Lock
+keycode 66 = Escape NoSymbol Escape
+keycode 51 = dollar asterisk NoSymbol NoSymbol dead_diaeresis
+keycode 34 = bracketleft braceleft NoSymbol NoSymbol dead_circumflex
+keycode 35 = bracketright braceright NoSymbol NoSymbol 96
