@@ -11,7 +11,7 @@ rm -f  ~/.xmodmaprc && ln .xmodmaprc ~/.xmodmaprc </br>
 ## xresources
 rm -f  ~/.Xresources && ln .Xresources ~/.Xresources </br>
 
-##Oh-my-zsh https://github.com/robbyrussell/oh-my-zsh
+## Oh-my-zsh https://github.com/robbyrussell/oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</br>
 rm -f ~/.zshrc && ln .zshrc ~/.zshrc</br>
 cd ~/.oh-my-zsh/plugins</br>
