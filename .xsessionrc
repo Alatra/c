@@ -1,3 +1,0 @@
-xmodmap ~/.xmodmaprc 
-sh ~/.fehbg
-xrandr --output HDMI1 --auto --right-of eDP1
