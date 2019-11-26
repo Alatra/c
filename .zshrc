@@ -22,9 +22,10 @@ source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#export PATH="$HOME/.local/bin:$PATH"
+#eval "$(rbenv init -)"
+
 if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
     alias nvim='echo "NO NO NO"'
 fi
@@ -32,7 +33,7 @@ fi
 alias ster="nvim ~/.Xresources && xrdb ~/.Xresources"
 alias szsh="$VISUAL ~/.zshrc && source ~/.zshrc"
 
-alias gaa="git add *"
+alias gaa="git add ."
 
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'l' vi-forward-char
@@ -44,3 +45,4 @@ bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+autoload -U compinit && compinit

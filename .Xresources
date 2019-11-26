@@ -77,7 +77,7 @@ URxvt.keysym.Shift-Control-Up:    \033[1;6A
 URxvt.keysym.Control-Down:        \033[1;5B
 URxvt.keysym.Shift-Control-Down:  \033[1;6B
 
-URxvt.perl-ext-common:       default,url-select,rezise-fonte
+URxvt.perl-ext-common:       default,url-select,resize-font
 URxvt.keysym.M-u:            perl:url-select:select_next
 URxvt.url-select.launcher:   /usr/bin/xdg-open
 URxvt.url-select.underline:  true
