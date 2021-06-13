@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/waza/.config/i3/IMG_30136572129195.jpeg' 
+feh --no-fehbg --bg-scale '/home/waza/.config/i3/img/IMG_30136572129195.jpeg' 

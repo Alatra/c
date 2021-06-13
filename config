@@ -204,7 +204,7 @@ bindsym $mod+Ctrl+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Ctrl+q exec i3exit logout
 
-bindsym $mod+Ctrl+v exec i3lock -i ~/.config/i3/hd_wallpaper_16065.png -t -e
+bindsym $mod+Ctrl+v exec i3lock -i ~/.config/i3/img/hd_wallpaper_16065.png -t -e
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
@@ -343,5 +343,5 @@ smart_gaps on
 smart_borders on
 
 exec xrandr --output HDMI1 --auto --right-of eDP1
-exec ~/.fehbg
-exec xmodmap ~/.xmodmaprc
+exec ~/.config/i3/fehbg
+exec xmodmap ~/.config/i3/xmodmaprc
