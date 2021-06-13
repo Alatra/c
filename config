@@ -4,7 +4,7 @@
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
-set $terminal urxvt
+set $terminal kitty
 set $browser firefox
 
 # set default desktop layout (default is tiling)
@@ -47,8 +47,8 @@ bindsym $mod+Ctrl+m exec $terminal -e 'alsamixer'
 ################################################################################################
 
 # Screen brightness controls
-#bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-#bndsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
 # bindsym $mod+F3 exec ranger
@@ -190,6 +190,8 @@ for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 
+for_window [class="GUI"] floating enable sticky enable border normal
+
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
@@ -202,7 +204,7 @@ bindsym $mod+Ctrl+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Ctrl+q exec i3exit logout
 
-bindsym $mod+Ctrl+v exec i3lock -i ~/Pictures/hd_wallpaper_16065.png -t -e
+bindsym $mod+Ctrl+v exec i3lock -i ~/.config/i3/hd_wallpaper_16065.png -t -e
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
@@ -301,7 +303,7 @@ bar {
         statusline #F9FAF9
         separator  #454947
 
-#                      border  backgr. text
+#                          border  backgr. text
         focused_workspace  #F9FAF9 #16a085 #292F34
         active_workspace   #595B5B #353836 #FDF6E3
         inactive_workspace #595B5B #222D31 #EEE8D5
@@ -312,7 +314,7 @@ bar {
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #556064 #556064 #80FFF9 #FDF6E3
+  client.focused          #556064 #FF0000 #80FFF9 #FDF6E3
   client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
   client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
