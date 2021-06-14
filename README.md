@@ -1,13 +1,13 @@
 # Setup
 ``` sh
-git clone https://github.com/Alatra/c </br>
-mv c ~/.config/i3 </br>
-cd ~/.config/i3 </br>
+git clone https://github.com/Alatra/c
+mv c ~/.config/i3
+cd ~/.config/i3
 ```
 
 ## Feh 
 ``` sh
-sudo pacman -S feh </br>
-chmod u+x fehbg </br>
-rm -f ~/.fehbg </br>
+sudo pacman -S feh
+chmod u+x fehbg
+rm -f ~/.fehbg
 ```
